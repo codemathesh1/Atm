@@ -3,8 +3,8 @@ public class Atm
 {
  public static void main(String[] args)
  { 
-   int pin = 1115;
-   int balance = 2000;
+   int pin = 12345;
+   int balance = 1000;
    int Addamount = 0;
    int Takeamount = 0;
 
@@ -34,7 +34,7 @@ public class Atm
    break;
    case 2:
    System.out.println("How much amount did you want to ADD to your account");
-   Addamount=scanner.nextInt();
+   Addamount=obj.nextInt();
    System.out.println("Successfully credited");
    balance = Addamount + balance;
    break;
@@ -62,7 +62,7 @@ System.out.println("Thanks for coming");
 
 break;	
 }
- if(opt >=5)
+ if(opt >=5 || opt==0)
   {
 	System.out.println("Thank you");
 	break;
