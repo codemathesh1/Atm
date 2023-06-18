@@ -9,13 +9,13 @@ public class Atm
    int Takeamount = 0;
 
    String name;
-   Scanner scanner = new Scanner(System.in);
+   Scanner obj = new Scanner(System.in);
    System.out.println("Enter your pin number");
-   int password = scanner.nextInt();
+   int password = obj.nextInt();
   if(password==pin)
  {
    System.out.println("Enter your name");
-   name = scanner.next();
+   name = obj.next();
    System.out.println("welcome" + name);
 
   while(true)
@@ -26,7 +26,7 @@ public class Atm
    System.out.println("press 4 to take receipt");
    System.out.println("Enter any number to EXIT");
 
-   int opt = scanner.nextInt();
+   int opt = obj.nextInt();
   switch(opt)
  {
    case 1:
@@ -40,7 +40,7 @@ public class Atm
    break;
    case 3:
    System.out.println("How much amount did you want to take");
-   Takeamount= scanner.nextInt();
+   Takeamount= obj.nextInt();
  if(Takeamount>balance)
 {
 	System.out.println("your balance is insufficient");
